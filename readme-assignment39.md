@@ -4,7 +4,7 @@
 
 [theMealDB](https://www.themealdb.com/api.php)
 [pokeAPI](https://pokeapi.co/)
-[MarvelAPI](https://developer.marvel.com/)
+~~[MarvelAPI](https://developer.marvel.com/)~~
 
 ## 할일
 
@@ -15,9 +15,10 @@
 
 ## 필수 기능 구현
 
-1. 전체 데이터 화면에 보여주기
+1. 데이터 화면에 보여주기
 2. 데이터 검색
 3. 세부 페이지
+4. 반응형으로 모바일 페이지 구현
 
 ## api 활용 팁
 
