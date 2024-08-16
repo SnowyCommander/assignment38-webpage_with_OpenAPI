@@ -1,4 +1,4 @@
-### assignment38-webpage_with_OpenAPI
+### assignment39-webpage_with_OpenAPI
 
 # API 사용하여 서울특별시 구로구 빈집 현황 리스트 만들기
 
