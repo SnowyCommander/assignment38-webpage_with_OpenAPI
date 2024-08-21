@@ -1,6 +1,41 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 1px solid black;
+  display: flex; width:100vh; max-width:100vh;
+} */
+*:not(html, title, script) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap:wrap;
 }
+body{max-width:100vh;}
+
+p{text-align: center;}
+
+/* label[for="search"] {Your CSS rules here } */
+#selectionForm{display:flex; flex-wrap:wrap;}
+/* inline, inline-block은 기본적으로 텍스트처럼 취급된다.
+그래서 영소문자의 text-baseline때문에 bottom padding같이 보이는 갭이 생기는데,
+이걸 조절하는게 vertical-align나 line-height property이다.
+ 그리고 텍스트처럼 취급되므로 html-file내에 입력한 enter(=new line)같은 whitespace류들은 모두 space로 번역된다.
+그래서 inline, inline-block다음에 오는 whitespace를 제거하고 싶다면, html-file내에서 newline을 포함한 모든 whitespace들을 제거해주면 된다.
+하지만, 그러면 코드의 가독성이 떨어지므로, 그냥 부모요소에게 display:flex를 주면 flex-item들 중 display:inline속성을 가진 요소들은 block-level로 overridden된다.*/
+
+#setOfProvince option:not([value="서울특별시"]) {
+  display:none;
+}
+
+#searchForm{}
+#search{max-width: calc(100vw - 20px);flex-grow:1;}
+label, #search, .material-symbols-outlined, button{vertical-align: middle;}
+/*button에도 주니 top border of form tag와 button 사이의 1px의 여백이 사라짐*/
+
+/* #selectionForm select {
+  width: auto;
+  white-space: normal;
+} */
