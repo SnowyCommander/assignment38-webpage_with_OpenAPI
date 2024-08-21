@@ -30,7 +30,6 @@ p{text-align: center;}
   display:none;
 }
 
-#searchForm{}
 #search{max-width: calc(100vw - 20px);flex-grow:1;}
 label, #search, .material-symbols-outlined, button{vertical-align: middle;}
 /*button에도 주니 top border of form tag와 button 사이의 1px의 여백이 사라짐*/
